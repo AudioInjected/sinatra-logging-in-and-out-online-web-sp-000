@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
   </head>
   <body id="page-top">
-    <% require_relative '../helpers/helpers' %>
+    <% require_relative '../helpers/' %>
     <% if is_logged_in?(session)%>
     <% user = Helpers.current_user(session)%>
     <h1>Welcome <%= user.name %></h1>

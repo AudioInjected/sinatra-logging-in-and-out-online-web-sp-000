@@ -9,7 +9,7 @@
   <!--     <% require_relative '../helpers/helpers' %>   -->
     <% if Helpers.is_logged_in?(session)%>
     <% user = Helpers.current_user(session)%>
-    <h1>Welcome <%= user.name %></h1>
+    <h1>Welcome <%= user.username %></h1>
     <h2>Your Balance:<%= user.balance %></h2>
     <% end %>
     

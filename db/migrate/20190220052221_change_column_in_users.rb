@@ -3,3 +3,5 @@ class ChangeColumnInUsers < ActiveRecord::Migration[5.1]
     change_column :users, :balance, :float
   end
 end
+
+
